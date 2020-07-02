@@ -18,7 +18,7 @@
   const dlink = "https://videownload.ml/download/https://youtu.be/" + video_id;
   const dbutton = document.createElement("div");
   dbutton.style.fontSize = "1.35rem";
-  dbutton.innerHTML = `<div id="nfdownload" title="הורדת הסרטון למחשב (דרך האתר videownload.ml)" style="align-items: center; line-height: 2.5"><a style="color :black; text-decoration: none; display: inline-block; border: 2px solid green" href="${dlink}" target="_blank">הורדה בנטפרי</a></div>`;
+  dbutton.innerHTML = `<div id="nfdownload" title="הורדת הסרטון למחשב (דרך האתר videowload.ml)" style="align-items: center; line-height: 2.5"><a style="color :black; text-decoration: none; display: inline-block;" href="${dlink}" target="_blank"><img src="https://github.com/chaim-chv/files-sending-for-netfree-users/raw/master/1.png" width="100" height="38"></a></div>`;
   var check = document.querySelector("ytd-menu-renderer #top-level-buttons");
   if (check == null) {
     setTimeout(() => {
