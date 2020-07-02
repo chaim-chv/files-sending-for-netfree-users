@@ -16,14 +16,26 @@
   }
   const dlink = "https://videownload.ml/download/https://youtu.be/" + video_id;
   const dbutton = document.createElement("div");
-  dbutton.style.fontSize = "1.35rem"
+  dbutton.style.fontSize = "1.35rem";
   dbutton.innerHTML = `<div id="nfdownload" style="align-items: center; line-height: 2.5"><a style="color :black; text-decoration: none; display: inline-block; border: 2px solid green" href="${dlink}" target="_blank">הורדה בנטפרי</a></div>`;
-  var check = document.querySelector("ytd-menu-renderer #top-level-buttons")
-    if (check == null) {
-  setTimeout(() => { document
-    .querySelector("ytd-menu-renderer #top-level-buttons")
-    .appendChild(dbutton); }, 5000); }
-    else { document
-        .querySelector("ytd-menu-renderer #top-level-buttons")
-        .appendChild(dbutton); };
+  var check = document.querySelector("ytd-menu-renderer #top-level-buttons");
+  if (check == null) {
+    setTimeout(() => {
+        if (check == null) {
+            setTimeout(() => {
+              document
+                .querySelector("ytd-menu-renderer #top-level-buttons")
+                .appendChild(dbutton);
+            }, 5000);
+          } else {
+            document
+              .querySelector("ytd-menu-renderer #top-level-buttons")
+              .appendChild(dbutton);
+          }
+    }, 3000);
+  } else {
+    document
+      .querySelector("ytd-menu-renderer #top-level-buttons")
+      .appendChild(dbutton);
+  }
 })();
