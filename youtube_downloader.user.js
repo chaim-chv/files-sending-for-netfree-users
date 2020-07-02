@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         youtube downloader (netfree)
 // @namespace    http://mitmachim.top/user/chv
-// @version      1.1
+// @version      1.2
 // @updateURL    https://github.com/chaim-chv/files-sending-for-netfree-users/raw/master/youtube_downloader.user.js
 // @description  adding download buton to youtube (for netfree users)
 // @author       chv
